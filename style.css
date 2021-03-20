@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 17px;
+    line-height: 1.47050;
+    font-weight: 400;
+    letter-spacing: .022em;
+    color: #1d1d1f;
+    font-style: normal;
+    background-color: rgb(245,245,247);
+}
+
+/* Main Content */
+.main{
+    position: relative;
+    display: block;
+}
+
+section{
+    display: block;
+}
+
+.main .section .section-content{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.main .section .section-content .title-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.main .section .section-content .title-container span{
+    font-size: 56px;
+    line-height: 1.12;
+    font-weight: 600;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0 15px;
+}
+
+@media only screen and (max-width: 610px){
+    .main .section .section-content .title-container span{
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 600;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin: 0 15px;
+    }
+}
+
+.main .section .section-content .search-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main .section .section-content .search-container #myInput{
+    width: calc(100% - 40px);
+    font-size: 18px;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 980px){
+    .main .section .section-content .search-container #myInput{
+        border-radius: 0;
+    }
+}
+
+.main .section .section-content .card-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.main .section .section-content .card-container .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 12px;
+    overflow: auto;
+    margin: 0;
+}
+
+@media only screen and (max-width: 610px){
+    .main .section .section-content .card-container .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.main .section .section-content .card-container .grid-container .card{
+    background-color: #fff;
+    width: calc(100% - 40px);
+    height: auto;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    grid-column: span 1;
+}
+
+.main .section .section-content .card-container .grid-container #cc{
+    display: block;
+}
+
+.main .section .section-content .card-container .grid-container .low{
+    background-color: #58e892;
+}
+
+.main .section .section-content .card-container .grid-container .high{
+    background-color: #e85f58;
+}
+
+.main .section .section-content .card-container .grid-container .card .contain h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    pointer-events: none;
+}
+
+.main .section .section-content .card-container .grid-container .card .contain h2{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+}
