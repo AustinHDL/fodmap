@@ -59,6 +59,33 @@ section{
     }
 }
 
+.main .section .section-content .des-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0 0 50px 0;
+    margin-bottom: 12px;
+}
+
+.main .section .section-content .des-container .des{
+    margin: 0 20px;
+}
+
+.main .section .section-content .des-container .des span{
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media only screen and (max-width: 610px){
+    .main .section .section-content .des-container .des span{
+        font-size: 18px;
+    }
+}
+
 .main .section .section-content .search-container{
     width: 100%;
     height: auto;
@@ -69,7 +96,7 @@ section{
     width: calc(100% - 40px);
     font-size: 18px;
     padding: 12px 20px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     background-color: #fff;
     border-radius: 30px;
     border: none;
