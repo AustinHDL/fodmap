@@ -110,10 +110,11 @@ section{
 }
 
 .main .section .section-content .card-container{
-    width: 100%;
+    width: calc(100% - 24px);
     height: auto;
     position: relative;
     margin-bottom: 50px;
+    padding: 0 12px;
 }
 
 .main .section .section-content .card-container .grid-container{
