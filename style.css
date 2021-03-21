@@ -138,3 +138,44 @@ section{
     font-weight: 500;
     line-height: 1.4;
 }
+
+/* Scroll to Top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, .2);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: .5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+#myBtn:hover {
+    background-color: rgba(0, 0, 0, .6);
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (max-width: 790px) {
+    #myBtn {
+        height: 25px;
+        right: 10px;
+        bottom: 15px;
+        width: 25px;
+    }
+
+    #myBtn:hover {
+        background-color: rgba(0, 0, 0, .2);
+        width: 25px;
+        height: 25px;
+    }
+}
